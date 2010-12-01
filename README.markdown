@@ -20,5 +20,6 @@ Pre-requisites
  * Python (2.6+) http://python.org 
  * pyserial http://pyserial.sourceforge.net/ 
  * A null modem cable (aka. reversed/crossed serial RS-232) - about £1 from Amazon
+ * GNU/Linux (developed with Ubuntu 10.10)
 
 **More details to follow soon!**

@@ -1,5 +1,27 @@
 import pyserial
 
+class FeatureNotAvailableError(Exception):
+        '''
+        Raised when a feature is not available for a given device
+        '''
+        def __init__(self, feature):
+                '''
+                ctor
+
+                @type  feature: str
+                @param feature: the feature which is not available
+                '''
+                self.feature = feature
+                self.msg = "Feature %s is not available"
+                Exception.__init__(self, self.msg)
+
+        def __str__(self):
+                return self.msg
+
+        def __repr__(self):
+                return str(self)
+
+
 class BaseDriver(object):
         '''
         This base class should be used for all drivers.
