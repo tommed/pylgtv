@@ -12,7 +12,7 @@ class FeatureNotAvailableError(Exception):
                 @param feature: the feature which is not available
                 '''
                 self.feature = feature
-                self.msg = "Feature %s is not available"
+                self.msg = "Feature '%s' is not available"
                 Exception.__init__(self, self.msg)
 
         def __str__(self):
