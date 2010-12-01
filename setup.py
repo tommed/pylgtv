@@ -6,5 +6,11 @@ setup(name='pylgtv',
         author='Thomas Medhurst',
         author_email='tom@tommed.co.uk',
         url='http://www.tommed.co.uk'
-        packages=['pylgtv','pylgtv.televisions','pylgtv.televisions.lg'],
+        packages=[
+                'pylgtv',
+                'pylgtv.televisions',
+                'pylgtv.televisions.lg',
+                'pylgtv.test',
+                'pylgtv.test.tools',
+                ],
         )
