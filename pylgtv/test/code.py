@@ -16,5 +16,6 @@ class TestPyLGTV(unittest.TestCase):
                 self.assertEqual(err.msg, str(err))
                 self.assertEqual(err.msg, repr(err))
 
+
 if __name__ == "__main__":
         unittest.main()
