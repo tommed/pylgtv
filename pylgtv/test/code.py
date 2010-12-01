@@ -1,6 +1,6 @@
 import sys, unittest
 sys.path.append('../../')
-import pylgtv.televisions.lg.lh3000 as lg_lh3000
+from pylgtv.televisions.lg import LG_LH3000
 from pylgtv import FeatureNotAvailableError, BaseDriver
 
 class TestPyLGTV(unittest.TestCase):

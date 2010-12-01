@@ -2,25 +2,25 @@ from time import sleep
 import sys
 
 sys.path.append('../../../')
-import pylgtv.televisions.lg.lh3000 as tv
+from pylgtv.televisions.lg import LG_LH3000 as lgtv
 
 def main():
-        ctl = tv.LG_LH3000()
+        ctl = lgtv()
 
         print "TV turn on"
-        ctlpower(on=True)
+        ctl.power(on=True)
         sleep(3)
 
         print "mute on"
-        ctlmute(on=True)
+        ctl.mute(on=True)
         sleep(2)
 
         print "mute off"
-        ctlmute(on=False)
+        ctl.mute(on=False)
         sleep(2)
 
         print "TV turn off"
-        ctlpower(on=False)
+        ctl.power(on=False)
 
 if __name__ == "__main__":
         main()
