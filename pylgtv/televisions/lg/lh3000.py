@@ -1,5 +1,5 @@
 
-from . import BaseDriver
+from .. import TVDriver
 
 class LG_LH3000(BaseDriver):
         _code_power_off       = 'ka {0} 00\r' # {0} is a placeholder for the set id, which is resolved in BaseDriver.write
